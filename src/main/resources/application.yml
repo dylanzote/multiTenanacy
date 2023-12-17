@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: multi-tenancy
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+tenants:
+  dataSources:
+    client1:
+      jdbcUrl: jdbc:postgresql://localhost:5432/client1
+      username: postgres
+      password: root
+    client2:
+      jdbcUrl: jdbc:postgresql://localhost:5432/client2
+      username: postgres
+      password: root
